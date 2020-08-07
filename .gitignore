@@ -1,0 +1,4 @@
+**/node_modules
+**/dist
+.idea/
+/mewconnect-connector/.rts2_cache_cjs/

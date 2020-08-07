@@ -1,0 +1,9 @@
+{
+  "rootDir": "../../",
+  "globalSetup": "<rootDir>/test/config/setup-global.js",
+  "roots": [
+    "src",
+    "test"
+  ],
+  "setupFilesAfterEnv": ["<rootDir>/test/config/setup-test.js"]
+}

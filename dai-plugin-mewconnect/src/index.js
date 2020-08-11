@@ -1,12 +1,15 @@
 import MEWconnect from '@myetherwallet/mewconnect-web-client'
 
 export default function(maker) {
-  const MEWCONNECT = 'MEWconnectProtocol';
+
+  var _ref = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {},
+    rpcUrl_ = _ref.rpcUrl;
+
+  const MEWCONNECT = 'mewconnect';
   maker.service('accounts', true).addAccountType(MEWCONNECT, async settings => {
     const web3Service = maker.service('web3');
     const CHAIN_ID = web3Service.networkId();
     const ETH_JSONRPC_URL = web3Service.rpcUrl;
-
     const MewConnect = new MEWconnect.Provider();
     const MewConnectProvider = MewConnect.makeWeb3Provider(
       CHAIN_ID,

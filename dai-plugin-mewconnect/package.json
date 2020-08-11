@@ -1,6 +1,6 @@
 {
   "name": "@myetherwallet/dai-plugin-mewconnect",
-  "version": "0.0.5",
+  "version": "0.0.12",
   "description": "A dai.js plugin for MEWconnect",
   "main": "dist/index.js",
   "devDependencies": {
@@ -19,10 +19,14 @@
     "webpack": "^4.39.3"
   },
   "dependencies": {
-    "@myetherwallet/mewconnect-web-client": "2.1.0-RC.5.16",
+    "@myetherwallet/mewconnect-web-client": "2.1.1-RC.4.6",
     "@makerdao/currency": "^0.9.5",
     "@makerdao/dai": "^0.18.4",
     "@makerdao/services-core": "^0.9.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MyEtherWallet/mewconnect-external-plugins.git"
   },
   "lint-staged": {
     "*.{js,json}": [

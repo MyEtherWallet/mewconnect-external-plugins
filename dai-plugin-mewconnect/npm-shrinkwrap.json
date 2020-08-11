@@ -1,6 +1,6 @@
 {
   "name": "@myetherwallet/dai-plugin-mewconnect",
-  "version": "0.0.5",
+  "version": "0.0.12",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
@@ -1598,9 +1598,9 @@
       }
     },
     "@myetherwallet/mewconnect-web-client": {
-      "version": "2.1.0-RC.5.16",
-      "resolved": "https://registry.npmjs.org/@myetherwallet/mewconnect-web-client/-/mewconnect-web-client-2.1.0-RC.5.16.tgz",
-      "integrity": "sha512-jWAMQPePBBrz763mRVu42symSHavBJRdgRi/y8u0ORZFDOcZe7QW7kANyGKjhnEZ+1g0bpFk7b1XQ2qDBzyelA==",
+      "version": "2.1.1-RC.4.6",
+      "resolved": "https://registry.npmjs.org/@myetherwallet/mewconnect-web-client/-/mewconnect-web-client-2.1.1-RC.4.6.tgz",
+      "integrity": "sha512-G6/Z+IJ1+brMIgGaI+MVBG+CmlZ/SV9MCKDqhPmNLscnIpiKU7xBoXQeMNOKDx3houku4xRyRzc8LD6D51xt5w==",
       "requires": {
         "bignumber.js": "^9.0.0",
         "browser-or-node": "^1.2.1",

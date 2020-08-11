@@ -4,7 +4,10 @@ import {AbstractConnector} from '@web3-react/abstract-connector'
 const CHAIN_ID = 1
 
 interface MewConnectConnectorArguments {
-    url: string
+    url: string;
+    infuraId?: string | undefined;
+    windowClosedError?: boolean | undefined;
+    subscriptionNotFoundNoThrow?: boolean | undefined;
 }
 
 interface MewConnectProviderOptions {
@@ -12,17 +15,26 @@ interface MewConnectProviderOptions {
     noUrlCheck: boolean;
     rpcUrl: string |  undefined;
     infuraId: string | undefined;
+    windowClosedError: boolean | undefined;
+    subscriptionNotFoundNoThrow: boolean | undefined;
 }
 
 export class MewConnectConnector extends AbstractConnector {
     public mewConnect: any
     private readonly url: string
     private provider: any
+    private readonly windowClosedError : boolean | undefined;
+    private readonly subscriptionNotFoundNoThrow : boolean | undefined;
+    private readonly infuraId : string | undefined;
 
-    constructor({url}: MewConnectConnectorArguments) {
+    constructor(args : MewConnectConnectorArguments) {
         super({supportedChainIds: [CHAIN_ID]})
-
+        const {url, windowClosedError, subscriptionNotFoundNoThrow , infuraId} = args;
         this.url = url
+        this.windowClosedError = windowClosedError || true;
+        this.subscriptionNotFoundNoThrow =
+            subscriptionNotFoundNoThrow || true;
+        this.infuraId = infuraId;
     }
 
     public async activate(): Promise<ConnectorUpdate> {
@@ -33,10 +45,12 @@ export class MewConnectConnector extends AbstractConnector {
                 chainId: CHAIN_ID,
                 noUrlCheck: true,
                 rpcUrl: undefined,
-                infuraId: undefined
+                infuraId: this.infuraId,
+                windowClosedError: this.windowClosedError,
+                subscriptionNotFoundNoThrow: this.subscriptionNotFoundNoThrow
             };
 
-            if (this.url.includes('https://mainnet.infura.io/v3/')) {
+            if (this.url.includes('https://mainnet.infura.io/v3/') && !options.infuraId) {
                 options.infuraId = this.url.replace('https://mainnet.infura.io/v3/', '')
             } else {
                 options.rpcUrl = this.url;

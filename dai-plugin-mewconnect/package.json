@@ -20,9 +20,9 @@
   },
   "dependencies": {
     "@myetherwallet/mewconnect-web-client": "2.1.4",
-    "@makerdao/currency": "^0.9.5",
-    "@makerdao/dai": "^0.18.4",
-    "@makerdao/services-core": "^0.9.9"
+    "@makerdao/currency": "^0.9.9",
+    "@makerdao/dai": "^0.32.5",
+    "@makerdao/services-core": "^0.10.0"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@myetherwallet/dai-plugin-mewconnect",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "A dai.js plugin for MEWconnect",
   "main": "dist/index.js",
   "devDependencies": {

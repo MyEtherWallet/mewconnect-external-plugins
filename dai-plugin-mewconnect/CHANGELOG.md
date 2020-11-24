@@ -1,3 +1,7 @@
+### Release v0.0.19
+- Bump @myetherwallet/mewconnect-web-client to version 2.1.14
+- Version to fix UI issues.
+
 ### Release v0.0.18
 - Bump @myetherwallet/mewconnect-web-client to version 2.1.12
 

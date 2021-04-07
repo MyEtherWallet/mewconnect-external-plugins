@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/mewconnect-external-plugins/static/js/main.c7fce6e3.chunk.js",
+    "main.js.map": "/mewconnect-external-plugins/static/js/main.c7fce6e3.chunk.js.map",
+    "runtime-main.js": "/mewconnect-external-plugins/static/js/runtime-main.eb6343dc.js",
+    "runtime-main.js.map": "/mewconnect-external-plugins/static/js/runtime-main.eb6343dc.js.map",
+    "static/js/2.9ea199d9.chunk.js": "/mewconnect-external-plugins/static/js/2.9ea199d9.chunk.js",
+    "static/js/2.9ea199d9.chunk.js.map": "/mewconnect-external-plugins/static/js/2.9ea199d9.chunk.js.map",
+    "static/js/3.8ea155e9.chunk.js": "/mewconnect-external-plugins/static/js/3.8ea155e9.chunk.js",
+    "static/js/3.8ea155e9.chunk.js.map": "/mewconnect-external-plugins/static/js/3.8ea155e9.chunk.js.map",
+    "static/js/4.22740dcf.chunk.js": "/mewconnect-external-plugins/static/js/4.22740dcf.chunk.js",
+    "static/js/4.22740dcf.chunk.js.map": "/mewconnect-external-plugins/static/js/4.22740dcf.chunk.js.map",
+    "index.html": "/mewconnect-external-plugins/index.html",
+    "static/js/2.9ea199d9.chunk.js.LICENSE.txt": "/mewconnect-external-plugins/static/js/2.9ea199d9.chunk.js.LICENSE.txt",
+    "static/js/3.8ea155e9.chunk.js.LICENSE.txt": "/mewconnect-external-plugins/static/js/3.8ea155e9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eb6343dc.js",
+    "static/js/3.8ea155e9.chunk.js",
+    "static/js/main.c7fce6e3.chunk.js"
+  ]
+}

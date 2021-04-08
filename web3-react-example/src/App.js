@@ -1,24 +1,16 @@
 import React from 'react'
-import { Web3ReactProvider, useWeb3React, UnsupportedChainIdError } from '@web3-react/core'
-import {
-  NoEthereumProviderError,
-  UserRejectedRequestError as UserRejectedRequestErrorInjected
-} from '@web3-react/injected-connector'
-// import { UserRejectedRequestError as UserRejectedRequestErrorWalletConnect } from '@web3-react/walletconnect-connector'
-import { UserRejectedRequestError as UserRejectedRequestErrorFrame } from '@web3-react/frame-connector'
+import { Web3ReactProvider, useWeb3React } from '@web3-react/core'
 import { Web3Provider } from '@ethersproject/providers'
 import { formatEther } from '@ethersproject/units'
 
 import { useEagerConnect, useInactiveListener } from './hooks'
 import {Send} from './send'
 import {Sign} from './sign'
-// import {SignSend} from './signSend'
 
 import {
   injected,
   mewConnect
 } from './connectors'
-// import { Spinner } from '../components/Spinner'
 
 const ConnectorNames = {
   Injected: 'Injected',
@@ -130,9 +122,6 @@ function App() {
               <Send/>
               <hr/>
             </li>
-{/*            <li>
-              <SignSend/>
-            </li>*/}
           </ol>
 
 

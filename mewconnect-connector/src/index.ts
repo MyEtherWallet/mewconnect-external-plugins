@@ -123,16 +123,10 @@ export class MewConnectConnector extends AbstractConnector {
                         throw new Error('The user rejected the request.');
                     })
                     .then((accounts: string[]): string => accounts[0]);
-                console.log({provider: this.provider, chainId: CHAIN_ID, account: account}); // todo remove dev item
                 return {provider: this.provider, chainId: this.chainId, account: account}
             }
-
-            // const account = await this.mewConnect.enable().then((accounts: string[]): string => accounts[0])
-            console.log({provider: this.provider, chainId: this.chainId, account: account}); // todo remove dev item
-
             return {provider: this.provider, chainId: this.chainId, account: account}
         } catch (e) {
-            console.log(e); // todo remove dev item
             return {provider: this.provider, chainId: this.chainId, account: ''}
         }
     }

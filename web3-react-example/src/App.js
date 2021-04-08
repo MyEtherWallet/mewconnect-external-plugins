@@ -13,7 +13,7 @@ import {
 } from './connectors'
 
 const ConnectorNames = {
-  Injected: 'Injected',
+  Injected: 'DappBrowser',
     MEWconnect: 'MewConnect'
 }
 
